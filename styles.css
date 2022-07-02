@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background: #141a26;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  width: 80%;
+}
+
+.SunRing1,
+.SunRing2,
+.SunRing3 {
+  transform-origin: 180.5px 495.5px;
+  animation: SunRingAnimation 1.5s linear infinite;
+}
+
+.SunRing2 {
+  animation-delay: 0.5s;
+}
+
+.SunRing3 {
+  animation-delay: 1s;
+}
+
+@keyframes SunRingAnimation {
+  to {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+#AsteroidBelt {
+  stroke-dasharray: 20px;
+  transform-origin: 180.5px 495.5px;
+  animation: AsteroidBeltAnimation 5s linear infinite;
+}
+
+@keyframes AsteroidBeltAnimation {
+  from {
+    stroke-dashoffset: 1000;
+  }
+}
+
+.Moon {
+  animation: OrbitAnimation linear infinite;
+}
+
+@keyframes OrbitAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.EarthMoon {
+  animation-duration: 5s;
+  transform-origin: 540.5px 495.5px;
+}
+
+.MarsMoon1,
+.MarsMoon2 {
+  transform-origin: 612.5px 495.5px;
+}
+
+.MarsMoon1 {
+  animation-duration: 30s;
+}
+
+.MarsMoon2 {
+  animation-duration: 50s;
+}
+
+.JupiterMoon,
+.SaturnMoon,
+.UranusMoon,
+.NeptuneMoon {
+  animation-duration: calc(var(--i) * 5s + 5s);
+}
+
+.JupiterMoon {
+  transform-origin: 828.5px 495.5px;
+}
+
+.SaturnMoon {
+  transform-origin: 1116.75px 495.22px;
+}
+
+.UranusMoon {
+  transform-origin: 1332.5px 495.5px;
+}
+
+.NeptuneMoon {
+  transform-origin: 1548.5px 495.5px;
+}
+
+.PlutoMoon {
+  animation-duration: 10s;
+  transform-origin: 1764.5px 495.5px;
+}

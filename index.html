@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <svg
+        id="SolarSystem"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 1800 991"
+      >
+        <defs>
+          <linearGradient
+            id="linear-gradient"
+            x1="395.59"
+            y1="488.18"
+            x2="397.36"
+            y2="502.41"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#b36721" />
+            <stop offset="0.52" stop-color="#fdedd0" />
+            <stop offset="1" stop-color="#b36721" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-2"
+            x1="464.98"
+            y1="481.63"
+            x2="472.09"
+            y2="509.63"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#ffa81f" />
+            <stop offset="0.52" stop-color="#fdedd0" />
+            <stop offset="1" stop-color="#ffa81f" />
+          </linearGradient>
+          <radialGradient
+            id="radial-gradient"
+            cx="180.5"
+            cy="495.5"
+            r="144"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0.3" stop-color="#ffe747" />
+            <stop offset="0.73" stop-color="#ffa81f" />
+            <stop offset="1" stop-color="#f27023" />
+          </radialGradient>
+          <linearGradient
+            id="linear-gradient-3"
+            x1="544.36"
+            y1="482.95"
+            x2="537.25"
+            y2="506.06"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#0094e8" />
+            <stop offset="0.31" stop-color="#45e8a6" />
+            <stop offset="0.59" stop-color="#0499e4" />
+            <stop offset="0.8" stop-color="#45e8a6" />
+            <stop offset="1" stop-color="#0094e8" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-4"
+            x1="619.49"
+            y1="481.86"
+            x2="607.04"
+            y2="506.15"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#9c403d" />
+            <stop offset="0.31" stop-color="#ea473d" />
+            <stop offset="0.59" stop-color="#9c403d" />
+            <stop offset="0.8" stop-color="#ea473d" />
+            <stop offset="1" stop-color="#9c403d" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-5"
+            x1="832.01"
+            y1="442.22"
+            x2="824.9"
+            y2="550.07"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#b36721" />
+            <stop offset="0.15" stop-color="#fdedd0" />
+            <stop offset="0.32" stop-color="#b36721" />
+            <stop offset="0.5" stop-color="#fdedd0" />
+            <stop offset="0.69" stop-color="#b36721" />
+            <stop offset="0.85" stop-color="#fdedd0" />
+            <stop offset="1" stop-color="#b36721" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-6"
+            x1="1224.17"
+            y1="519.29"
+            x2="1224.17"
+            y2="537.77"
+            gradientTransform="translate(253.58 -396.55) rotate(20.47)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#ffa81f" />
+            <stop offset="0.15" stop-color="#fdedd0" />
+            <stop offset="0.32" stop-color="#ffa81f" />
+            <stop offset="0.5" stop-color="#fdedd0" />
+            <stop offset="0.69" stop-color="#ffa81f" />
+            <stop offset="0.85" stop-color="#fdedd0" />
+            <stop offset="1" stop-color="#ffa81f" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-7"
+            x1="1224.2"
+            y1="474.2"
+            x2="1224.2"
+            y2="510.95"
+            xlink:href="#linear-gradient-6"
+          />
+          <linearGradient
+            id="linear-gradient-8"
+            x1="1296.5"
+            y1="495.5"
+            x2="1368.5"
+            y2="495.5"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#0094e8" />
+            <stop offset="0.49" stop-color="#47d4dd" />
+            <stop offset="1" stop-color="#0094e8" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-9"
+            x1="1548.19"
+            y1="479.16"
+            x2="1548.78"
+            y2="509.98"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#0094e8" />
+            <stop offset="0.49" stop-color="#015beb" />
+            <stop offset="1" stop-color="#0161eb" />
+          </linearGradient>
+        </defs>
+        <circle
+          id="MercuryCentre"
+          cx="396.5"
+          cy="495.5"
+          r="9"
+          fill="url(#linear-gradient)"
+        />
+        <circle
+          id="VenusCentre"
+          cx="468.5"
+          cy="495.5"
+          r="18"
+          fill="url(#linear-gradient-2)"
+        />
+        <g id="SunGroup">
+          <circle cx="180.5" cy="495.5" r="144" fill="url(#radial-gradient)" />
+          <circle
+            class="SunRing1"
+            cx="180.5"
+            cy="495.5"
+            r="144"
+            fill="none"
+            stroke="#ff1d25"
+            stroke-miterlimit="10"
+          />
+          <circle
+            class="SunRing2"
+            cx="180.5"
+            cy="495.5"
+            r="144"
+            fill="none"
+            stroke="#ff1d25"
+            stroke-miterlimit="10"
+          />
+          <circle
+            class="SunRing3"
+            cx="180.5"
+            cy="495.5"
+            r="144"
+            fill="none"
+            stroke="#ff1d25"
+            stroke-miterlimit="10"
+          />
+        </g>
+        <g id="EarthGroup">
+          <circle
+            id="Earth"
+            cx="540.5"
+            cy="495.5"
+            r="18"
+            fill="url(#linear-gradient-3)"
+          />
+          <circle
+            class="Moon EarthMoon"
+            cx="563"
+            cy="518"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+        </g>
+        <g id="MarsGroup">
+          <circle
+            id="Mars"
+            cx="612.5"
+            cy="495.5"
+            r="18"
+            fill="url(#linear-gradient-4)"
+          />
+          <circle
+            class="Moon MarsMoon1"
+            cx="626"
+            cy="518"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon MarsMoon2"
+            cx="635"
+            cy="482"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+        </g>
+        <path
+          id="AsteroidBelt"
+          d="M287.5,9c271.55,0,495,223.45,495,495s-223.45,495-495,495"
+          transform="translate(-107.5 -8.5)"
+          fill="none"
+          stroke="gray"
+          stroke-miterlimit="10"
+        />
+        <g id="JupiiterGroup">
+          <circle
+            id="Jupiter"
+            cx="828.5"
+            cy="495.5"
+            r="63"
+            fill="url(#linear-gradient-5)"
+          />
+          <circle
+            class="Moon JupiterMoon"
+            style="--i: 0"
+            cx="837.5"
+            cy="414.5"
+            r="9"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon JupiterMoon"
+            style="--i: 1"
+            cx="927.5"
+            cy="504.5"
+            r="9"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon JupiterMoon"
+            style="--i: 2"
+            cx="941"
+            cy="536"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon JupiterMoon"
+            style="--i: 3"
+            cx="959"
+            cy="464"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+        </g>
+        <g id="SaturnGroup">
+          <path
+            d="M1251.62,527.13a36,36,0,0,1-63.37-23.86,293.89,293.89,0,0,0,31.83,13.91A298.77,298.77,0,0,0,1251.62,527.13Z"
+            transform="translate(-107.5 -8.5)"
+            fill="url(#linear-gradient-6)"
+          />
+          <path
+            d="M1258,516.31a35.88,35.88,0,0,1-4.14,7.92,208.15,208.15,0,0,1-32.82-9.57c-13.14-4.91-24.63-10.35-32.53-15.16a36,36,0,0,1,2-8.37,35.91,35.91,0,0,1,3.65-7.2,36,36,0,0,1,65.8,24.34,35.38,35.38,0,0,1-.63,3.51A36.08,36.08,0,0,1,1258,516.31Z"
+            transform="translate(-107.5 -8.5)"
+            fill="url(#linear-gradient-7)"
+          />
+          <path
+            d="M1284.63,528.39c-1.54,4.13-14.67,3.35-33-1.26a298.77,298.77,0,0,1-31.54-10,293.89,293.89,0,0,1-31.83-13.91c-16-8.25-25.78-15.91-24.28-19.92s13.33-3.4,30.2.58a36.58,36.58,0,0,0-1.86,3.17c-8.41-1.34-14-1-14.85,1.29s3.39,6.45,11,11.11c7.9,4.81,19.39,10.25,32.53,15.16a208.15,208.15,0,0,0,32.82,9.57c9.77,1.81,16.36,1.66,17.3-.87s-3.66-6.72-11.8-11.58a35.38,35.38,0,0,0,.63-3.51C1276.19,516.61,1286.14,524.35,1284.63,528.39Z"
+            transform="translate(-107.5 -8.5)"
+            fill="#c05829"
+          />
+          <circle
+            class="Moon SaturnMoon"
+            style="--i: 0"
+            cx="1049"
+            cy="455"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon SaturnMoon"
+            style="--i: 1"
+            cx="1031"
+            cy="473"
+            r="13.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon SaturnMoon"
+            style="--i: 2"
+            cx="1013"
+            cy="545"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon SaturnMoon"
+            style="--i: 3"
+            cx="1112"
+            cy="428"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon SaturnMoon"
+            style="--i: 4"
+            cx="1175"
+            cy="590"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon SaturnMoon"
+            style="--i: 5"
+            cx="1112"
+            cy="608"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon SaturnMoon"
+            style="--i: 6"
+            cx="1220"
+            cy="545"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon SaturnMoon"
+            style="--i: 7"
+            cx="1233.5"
+            cy="513.5"
+            r="9"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon SaturnMoon"
+            style="--i: 8"
+            cx="1247"
+            cy="491"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+        </g>
+        <g id="UranusGroup">
+          <circle
+            id="Uranus"
+            cx="1332.5"
+            cy="495.5"
+            r="36"
+            fill="url(#linear-gradient-8)"
+          />
+          <circle
+            class="Moon UranusMoon"
+            style="--i: 0"
+            cx="1373"
+            cy="464"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon UranusMoon"
+            style="--i: 1"
+            cx="1391"
+            cy="491"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon UranusMoon"
+            style="--i: 2"
+            cx="1400"
+            cy="536"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon UranusMoon"
+            style="--i: 3"
+            cx="1373"
+            cy="527"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+        </g>
+        <g id="NeptuneGroup">
+          <circle
+            id="NeptuneCentre"
+            cx="1548.5"
+            cy="495.5"
+            r="27"
+            fill="url(#linear-gradient-9)"
+          />
+          <circle
+            class="Moon NeptuneMoon"
+            style="--i: 0"
+            cx="1598"
+            cy="473"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon NeptuneMoon"
+            style="--i: 1"
+            cx="1616"
+            cy="518"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+          <circle
+            class="Moon NeptuneMoon"
+            style="--i: 2"
+            cx="1557.5"
+            cy="540.5"
+            r="9"
+            fill="#b7b7b9"
+          />
+        </g>
+        <g id="PlutoGroup">
+          <circle id="Pluto" cx="1764.5" cy="495.5" r="9" fill="#fdedd0" />
+          <circle
+            class="Moon PlutoMoon"
+            cx="1742"
+            cy="473"
+            r="4.5"
+            fill="#b7b7b9"
+          />
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>
